@@ -1,0 +1,73 @@
+
+<!-- To do:
+		Auto generate the options 
+		Add the action to the set buttons
+		Change color for status space based on server answer  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='refresh' content='10'/>
+    <title>ESP8266 WiFi Network</title>
+    <style>
+     body { background-color: #cccccc; font-family: Arial, Helvetica, Sans-Serif; font-size: 1em; Color: #000000; }*/
+     h1 { Color: #AA0000; }
+     input {background-color: #cccccc;width:15%}
+     table {font-weight:normal; font-family:"Times New Roman"; width:65%;}
+     #ipAddress {width:2%;background-color:#f5f5f0}
+     #headTable { font-weight: bold; }
+     #buttonSubmitIp {width: 3%}
+     #buttonSubmit {width:35%}
+     #divStatus {background-color: green}
+     .currentNumber { font-weight: normal; }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Project ESP8266</h1>
+    <tr>
+	      <th> Ip Address</th>
+	      <th><input id="ipAddress" type="number" min="0" max="254">.<input id="ipAddress" type="number" min="0" max="254">.<input id="ipAddress" type="number" min="0" max="254">.<input id="ipAddress" type="number" min="0" max="254"></th>
+	      <th><button id="buttonSubmitIp" type="button">Set</button></th>
+	      <th><span id=divStatus background-color:green"> Ok </span></th>
+	</tr>
+    <p>Uptime: %02d:%02d:%02d</p>
+    <br>
+    <table>
+	    <tr id="headTable">
+	      <th>Nr</th>
+	      <th>Time start</th> 
+	      <th>Time end</th>
+	      <th>Set</th>
+	      <th>Status</th>
+	    </tr>
+
+	    <tr>
+	      <th class="currentNumber">1</th>
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeStartMinutes" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeStartMinutes" ></p></th> 
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeEndHour" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeEndMinutes" ></p></th> 
+	      <th><button id="buttonSubmit" type="button">Set</button></th>
+	      <th><span id=divStatus background-color:green"> Ok </span></th>
+    	</tr>
+    	<tr>
+	      <th class="currentNumber">2</th>
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeStartMinutes" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeStartMinutes" ></p></th> 
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeEndHour" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeEndMinutes" ></p></th> 
+	      <th><button id="buttonSubmit" type="button">Set</button></th>
+	      <th><span id=divStatus background-color:green"> Ok </span></th>
+    	</tr>
+    	<tr>
+	      <th class="currentNumber">3</th>
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeStartMinutes" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeStartMinutes" ></p></th> 
+	      <th>  <p>h:<input type="number" min="0" max="23" value="1" name="TimeEndHour" >
+	      		   m:<input type="number" min="1" max="59" value="1" name="TimeEndMinutes" ></p></th> 
+	      <th><button id="buttonSubmit" type="button">Set</button></th>
+	      <th><span id=divStatus background-color:green"> Ok </span></th>
+    	</tr>
+    </table>
+  </body>\
+</html> 
